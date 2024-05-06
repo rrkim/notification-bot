@@ -1,0 +1,23 @@
+
+target:
+
+  weather:
+    title: Weather
+    type: weather
+    enable: True
+    city: Seoul
+    apiKey: YOUR_API_KEY
+
+  schedule:
+    title: Schedule
+    type: icalendar
+    enable: True
+    url: YOUR_ICALENDAR_LINK
+    before_days: 7
+    after_days: 1
+
+receiver:
+  main:
+    type: slack
+    enable: True
+    url: YOUR_SLACK_INCOMING_WEBHOOK_URL
